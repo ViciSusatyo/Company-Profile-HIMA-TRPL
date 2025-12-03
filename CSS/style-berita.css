@@ -6,12 +6,11 @@ body {
     color: #333;
 }
 
-/* Typography Utility */
 .ls-1 {
     letter-spacing: 1px;
 }
 
-/* --- SIDEBAR MENU (OFFCANVAS) --- */
+/* Sidebar Menu */
 .offcanvas {
     max-width: 300px;
 }
@@ -37,60 +36,68 @@ body {
     color: #000 !important;
 }
 
-/* --- CARD BERITA --- */
+/* --- STYLE KARTU PRESTASI --- */
 .custom-card {
-    border-radius: 8px;
-    border-color: #f0f0f0 !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background-color: #fff;
-    position: relative;
-    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0 !important;
 }
 
 .custom-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    border-color: #e0e0e0 !important;
+    transform: translateY(-8px); /* Naik lebih tinggi dibanding berita */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-color: #ddd !important;
     cursor: pointer;
 }
 
-/* Image Placeholder */
-.img-placeholder {
-    width: 70px; /* Sedikit lebih besar dari pengumuman */
-    height: 70px;
-    background-color: #f1f3f5;
-    color: #adb5bd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    border-radius: 6px;
+/* Container Foto Besar */
+.achievement-img-container {
+    width: 100%;
+    height: 250px; /* Tinggi fix agar foto besar */
+    background-color: #e9ecef;
+    border-bottom: 1px solid #f0f0f0;
+    /* Jika nanti pakai <img> asli: 
+       background-image: url('...'); 
+       background-size: cover; 
+       background-position: center; 
+    */
 }
 
-/* Teks Limit (agar tinggi kartu seragam) */
-.card-text-limit {
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Maksimal 3 baris teks deskripsi */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.5;
-    font-size: 0.85rem;
-    margin-bottom: 0;
+.card-body {
+    padding: 1.5rem;
 }
 
-/* Gaya Khusus Tanggal Berita */
-.news-date {
-    font-size: 0.75rem;
-    color: #888;
-    margin-top: 2px;
-    display: block;
+.card-text {
+    line-height: 1.6;
 }
 
-.news-date i {
-    margin-right: 4px;
+.kegiatan1 {
+    display: block; 
+    width: 100%;
+    height: 100%;
+
+    /* Masukkan URL gambar Anda di sini */
+    background-image: url('../Foto/Berita-1.webp'); 
+    
+    /* Agar gambar tidak gepeng/terpotong aneh */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Separator Line */
+.kegiatan2 {
+    display: block; 
+    width: 100%;
+    height: 100%;
+
+    /* Masukkan URL gambar Anda di sini */
+    background-image: url('../Foto/Berita-2.webp'); 
+    
+    /* Agar gambar tidak gepeng/terpotong aneh */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 hr {
     border-top: 1px solid #000;
 }
