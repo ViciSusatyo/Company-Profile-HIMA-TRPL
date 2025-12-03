@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - Agenda Kegiatan</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/style-agenda.css">
+</head>
+<body>
+
+    <div class="container mt-4 mb-2">
+        <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-link text-dark p-0 me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+            <div>
+                <small class="text-uppercase text-muted fw-bold ls-1">Informasi</small>
+                <h1 class="fw-bold mb-0">AGENDA KEGIATAN</h1>
+            </div>
+        </div>
+        <hr class="border-2 opacity-100">
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold" id="sidebarMenuLabel">MENU UTAMA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="menu-list">
+                <a href="./homepage.html#beranda" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-house fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Beranda</h6>
+                        <p class="small text-muted mb-0">Kembali ke halaman utama.</p>
+                    </div>
+                </a>
+
+                <a href="./pengumuman.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-bullhorn fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Pengumuman</h6>
+                        <p class="small text-muted mb-0">Info akademik & jadwal.</p>
+                    </div>
+                </a>
+                
+                <a href="./agenda.html" class="menu-item d-flex mb-4 text-decoration-none text-dark active">
+                    <div class="me-3 mt-1"><i class="fa-regular fa-calendar-check fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Agenda Kegiatan</h6>
+                        <p class="small text-muted mb-0">Jadwal kegiatan HIMA TRPL.</p>
+                    </div>
+                </a>
+
+                <a href="./berita.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-regular fa-newspaper fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Berita & Artikel</h6>
+                        <p class="small text-muted mb-0">Kabar terbaru & artikel IT.</p>
+                    </div>
+                </a>
+
+                <a href="./prestasi.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-trophy fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Prestasi</h6>
+                        <p class="small text-muted mb-0">Daftar pencapaian mahasiswa.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                
+                <div class="calendar-container shadow-sm p-4 bg-white rounded border">
+                    <div class="calendar-header d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold mb-0" id="monthYear"></h4>
+                        <div>
+                            <button class="btn btn-outline-dark btn-sm me-1" id="prevMonth"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="btn btn-outline-dark btn-sm" id="nextMonth"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="calendar-weekdays d-flex justify-content-between text-muted small fw-bold mb-3 text-uppercase">
+                        <div>Min</div><div>Sen</div><div>Sel</div><div>Rab</div><div>Kam</div><div>Jum</div><div>Sab</div>
+                    </div>
+
+                    <div class="calendar-days" id="calendarDays"></div>
+                </div>
+
+                <div class="event-details mt-4" id="eventDetails" style="display: none;">
+                    <h5 class="fw-bold border-bottom pb-2 mb-3">Kegiatan Tanggal <span id="selectedDateText" class="text-primary"></span></h5>
+                    <div id="eventList">
+                        </div>
+                </div>
+                
+                <div class="mt-4 text-center text-muted" id="noEventMsg">
+                    <small>Klik pada tanggal yang memiliki tanda titik untuk melihat detail kegiatan.</small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/script-agenda.js"></script>
+</body>
+</html>

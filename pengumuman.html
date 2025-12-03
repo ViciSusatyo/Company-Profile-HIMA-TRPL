@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - Pengumuman</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/style-pengumuman.css">
+</head>
+<body>
+
+    <div class="container mt-4 mb-2">
+        <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-link text-dark p-0 me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+            
+            <div>
+                <small class="text-uppercase text-muted fw-bold ls-1">Informasi</small>
+                <h1 class="fw-bold mb-0">PENGUMUMAN</h1>
+            </div>
+        </div>
+        <hr class="border-2 opacity-100">
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold" id="sidebarMenuLabel">MENU UTAMA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="menu-list">
+                <a href="./homepage.html#beranda" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-house fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Beranda</h6>
+                        <p class="small text-muted mb-0">Kembali ke halaman utama.</p>
+                    </div>
+                </a>
+
+                <a href="./pengumuman.html" class="menu-item d-flex mb-4 text-decoration-none text-dark active">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-bullhorn fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Pengumuman & Berita</h6>
+                        <p class="small text-muted mb-0">Informasi terbaru saat ini.</p>
+                    </div>
+                </a>
+
+                <a href="./agenda.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-regular fa-calendar-check fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Agenda Kegiatan</h6>
+                        <p class="small text-muted mb-0">Jadwal kegiatan HIMA TRPL.</p>
+                    </div>
+                </a>
+
+                <a href="./berita.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-regular fa-newspaper fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Berita & Artikel</h6>
+                        <p class="small text-muted mb-0">Kabar terbaru & artikel IT.</p>
+                    </div>
+                </a>
+
+                <a href="./prestasi.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-trophy fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Prestasi</h6>
+                        <p class="small text-muted mb-0">Daftar pencapaian mahasiswa.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Hasil Seleksi Tahap 1</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Pengumuman hasil seleksi administrasi calon anggota baru HIMA TRPL periode 2024/2025.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Perubahan KRS</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Informasi mengenai batas akhir perubahan Kartu Rencana Studi semester ganjil bagi mahasiswa D4.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Open Recruitment</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Dibuka pendaftaran kepanitiaan untuk acara Dies Natalis Jurusan Teknologi Informasi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Libur Nasional</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Pemberitahuan libur perkuliahan dalam rangka hari raya keagamaan minggu depan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Workshop UI/UX</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Undangan terbuka untuk seluruh mahasiswa TRPL mengikuti workshop desain antarmuka aplikasi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Beasiswa Prestasi</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Tawaran beasiswa PPA dan BBM untuk mahasiswa berprestasi dengan IPK diatas 3.50.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Seminar PKL</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Jadwal pelaksanaan seminar hasil Praktik Kerja Lapangan untuk mahasiswa semester akhir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Maintenance Server</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Pemberitahuan gangguan akses JTI Online dikarenakan adanya pemeliharaan server pusat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-3 align-items-center">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Lomba Coding</h6>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit">Ayo ikuti kompetisi Competitive Programming tingkat nasional yang diadakan oleh Polije.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/script-pengumuman.js"></script>
+</body>
+</html>

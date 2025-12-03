@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Typography Utility */
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+/* --- SIDEBAR MENU (OFFCANVAS) --- */
+.offcanvas {
+    max-width: 300px;
+}
+
+.menu-item {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    opacity: 1;
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.menu-item.active {
+    opacity: 1;
+    background-color: #e9ecef;
+    border-left: 4px solid #333;
+    color: #000 !important;
+}
+
+/* --- CARD BERITA --- */
+.custom-card {
+    border-radius: 8px;
+    border-color: #f0f0f0 !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-color: #e0e0e0 !important;
+    cursor: pointer;
+}
+
+/* Image Placeholder */
+.img-placeholder {
+    width: 70px; /* Sedikit lebih besar dari pengumuman */
+    height: 70px;
+    background-color: #f1f3f5;
+    color: #adb5bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
+/* Teks Limit (agar tinggi kartu seragam) */
+.card-text-limit {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Maksimal 3 baris teks deskripsi */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+/* Gaya Khusus Tanggal Berita */
+.news-date {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 2px;
+    display: block;
+}
+
+.news-date i {
+    margin-right: 4px;
+}
+
+/* Separator Line */
+hr {
+    border-top: 1px solid #000;
+}

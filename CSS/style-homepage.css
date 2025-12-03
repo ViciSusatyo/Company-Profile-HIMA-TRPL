@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+.nav-link {
+    font-weight: 500;
+    color: #555 !important;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #5f5f5f !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../Foto/homepage-beranda.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+.hero-title {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Section General */
+.section-padding {
+    padding: 60px 0;
+}
+
+.about-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+h2.section-title {
+    background-color: #e9ecef;
+    padding: 12px 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: inline-block;
+    border-radius: 4px;
+    width: 100%;
+    color: #2c3e50;
+    border-left: 4px solid #5f5f5f;
+}
+    
+/* About Text */
+.about-text {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Struktur Organisasi */
+.profile-card {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.profile-img {
+    height: 150px;
+    width: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.profile-role {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+.profile-name {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Organizational Structure Improvements */
+.org-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.org-level {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.org-level.leadership {
+    flex-direction: column;
+    align-items: center;
+}
+.org-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0 15px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.org-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.org-member.leader {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+}
+/* --- Styling Foto Struktur Organisasi --- */
+
+/* Gaya dasar foto anggota */
+.org-img {
+    width: 160px;           /* Lebar foto */
+    height: 120px;          /* Tinggi foto (sama agar jadi persegi/lingkaran) */
+    object-fit: cover;      /* Agar foto tidak gepeng/terdistorsi */ 
+    margin-bottom: 15px;    /* Jarak antara foto dan teks di bawahnya */
+    border: 3px solid #f0f0f0; /* Garis tepi tipis */
+    background-color: #ddd; /* Warna cadangan jika foto gagal dimuat */
+}
+
+/* Khusus untuk Ketua (Leader) ukurannya lebih besar */
+.org-member.leader .org-img {
+    width: 200px;
+    height: 150px;
+    border: 3px solid #fff; /* Garis tepi putih agar kontras dengan background gelap */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.org-member.leader h4 {
+    color: white;
+}
+.org-divisions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.division {
+    flex: 1;
+    margin: 0 15px;
+}
+.division h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+.division-member {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background-color 0.3s;
+}
+.division-member:hover {
+    background-color: #f8f9fa;
+}
+/* --- Styling Foto Anggota Divisi --- */
+/* Update class division-member agar isinya sejajar (Flexbox) */
+.division-member {
+    display: flex;          /* Membuat foto dan teks sejajar ke samping */
+    align-items: center;    /* Posisi tengah secara vertikal */
+    gap: 15px;              /* Jarak antara foto dan nama */
+    padding: 10px 15px;     /* Sedikit penyesuaian padding */
+    text-align: left;       /* Pastikan teks rata kiri */
+}
+
+/* Styling khusus untuk foto kecil di divisi */
+.division-img {
+    width: 50px;            /* Ukuran foto lebih kecil (thumbnail) */
+    height: 50px;     /* Membuat lingkaran */
+    object-fit: cover;      /* Agar foto tidak gepeng */
+    border: 2px solid #ddd; /* Garis tepi tipis */
+    flex-shrink: 0;         /* Mencegah foto mengecil jika nama kepanjangan */
+}
+
+/* Agenda Section */
+.agenda-card {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.agenda-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.agenda-icon {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+.agenda-icon-image {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.agenda-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #333;
+}
+.btn-detail {
+    background-color: #5f5f5f;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.btn-detail:hover {
+    background-color: #010101;
+}
+
+/* Custom Button: Gray Outline to Black */
+.btn-custom-gray {
+    color: #6c757d;       /* Warna Teks Abu-abu */
+    border-color: #6c757d; /* Warna Garis Abu-abu */
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-gray:hover,
+.btn-custom-gray:active,
+.btn-custom-gray:focus {
+    color: #fff !important;      /* Teks menjadi Putih */
+    background-color: #000 !important; /* Latar menjadi Hitam */
+    border-color: #000 !important;     /* Garis menjadi Hitam */
+    box-shadow: none;
+}
+
+/* Registration Section */
+.registration-section {
+    background-color: #2c3e50;
+    color: white;
+}
+.registration-section .section-title {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* Information Sections */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.info-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #5f5f5f;
+}
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+.info-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+.info-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* Footer & Contact */
+.contact-section {
+    background-color: #fff;
+    padding-top: 20px;
+}
+.map-container {
+    width: 100%;
+    height: 300px;
+    background-color: #e9f5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.contact-icons {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.contact-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Membuat kelas khusus untuk rata kanan-kiri */
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word; /* Opsional: untuk spasi yang lebih rapi */
+}
+
+/* Update Bagian Agenda Card */
+.agenda-card {
+    background: #fff;
+    border: none;
+    border-radius: 12px; /* Sudut lebih membulat */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0; /* Border tipis agar rapi */
+}
+
+.agenda-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Memastikan ikon dan teks sejajar */
+.agenda-details .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tipografi Judul Bagian Detail (Waktu, Koordinator, CP) */
+.agenda-details span.fw-bold {
+    font-size: 0.85rem;
+    color: #333;
+}
+
+/* Tipografi Isi Detail */
+.agenda-details span.text-muted, 
+.agenda-details a.text-muted {
+    font-size: 0.9rem;
+}
+
+/* Hapus style agenda-date yang lama jika Anda menggunakan desain baru ini */
+/* .agenda-date {
+   ... (kode lama ini bisa dihapus/komentar agar tidak bentrok)
+} 
+*/
+
+/* Footer Text */
+footer {
+    font-size: 0.8rem;
+    color: #777;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    background-color: #f8f9fa;
+}
+footer a {
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #5f5f5f !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .about-title {
+        font-size: 2rem;
+    }
+    .org-level {
+        flex-direction: column;
+        align-items: center;
+    }
+    .org-member {
+        margin-bottom: 20px;
+    }
+    .org-divisions {
+        flex-direction: column;
+    }
+    .division {
+        margin-bottom: 30px;
+    }
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-padding {
+        padding: 40px 0;
+    }
+    .hero-section {
+        padding: 60px 0;
+    }
+    .hero-title {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - Berita & Artikel</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/style-berita.css">
+</head>
+<body>
+
+    <div class="container mt-4 mb-2">
+        <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-link text-dark p-0 me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+            <div>
+                <small class="text-uppercase text-muted fw-bold ls-1">Informasi</small>
+                <h1 class="fw-bold mb-0">BERITA & ARTIKEL</h1>
+            </div>
+        </div>
+        <hr class="border-2 opacity-100">
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold" id="sidebarMenuLabel">MENU UTAMA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="menu-list">
+                <a href="./homepage.html#beranda" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-house fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Beranda</h6>
+                        <p class="small text-muted mb-0">Kembali ke halaman utama.</p>
+                    </div>
+                </a>
+
+                <a href="./pengumuman.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-bullhorn fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Pengumuman</h6>
+                        <p class="small text-muted mb-0">Info akademik & jadwal.</p>
+                    </div>
+                </a>
+
+                <a href="./agenda.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-regular fa-calendar-check fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Agenda Kegiatan</h6>
+                        <p class="small text-muted mb-0">Jadwal kegiatan HIMA TRPL.</p>
+                    </div>
+                </a>
+
+                <a href="./berita.html" class="menu-item d-flex mb-4 text-decoration-none text-dark active">
+                    <div class="me-3 mt-1"><i class="fa-regular fa-newspaper fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Berita & Artikel</h6>
+                        <p class="small text-muted mb-0">Kabar terbaru & artikel IT.</p>
+                    </div>
+                </a>
+
+                <a href="./prestasi.html" class="menu-item d-flex mb-4 text-decoration-none text-dark">
+                    <div class="me-3 mt-1"><i class="fa-solid fa-trophy fa-lg"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Prestasi</h6>
+                        <p class="small text-muted mb-0">Daftar pencapaian mahasiswa.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Kuliah Tamu Industri</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-regular fa-calendar me-1"></i> 20 Nov 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">Mahasiswa TRPL mendapatkan wawasan baru mengenai teknologi Cloud Computing langsung dari praktisi AWS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Kunjungan Studi Banding</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-regular fa-calendar me-1"></i> 18 Nov 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">HIMA TRPL menerima kunjungan dari Himpunan Mahasiswa Informatika Universitas Jember untuk bertukar program kerja.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Update Kurikulum 2025</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-regular fa-calendar me-1"></i> 15 Nov 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">Program Studi D4 TRPL resmi menerapkan kurikulum baru berbasis proyek (PBL) mulai semester depan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Pelatihan Git & Github</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-regular fa-calendar me-1"></i> 10 Nov 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">Divisi IPTEK sukses menyelenggarakan pelatihan version control system untuk mahasiswa semester 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Tren AI di Tahun 2025</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-regular fa-newspaper me-1"></i> 05 Nov 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">Artikel: Membahas bagaimana Generative AI mengubah cara programmer bekerja dalam menulis kode.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Bakti Sosial Desa Binaan</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-regular fa-calendar me-1"></i> 01 Nov 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">Kegiatan pengabdian masyarakat berupa pelatihan komputer dasar untuk perangkat desa di Bondowoso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Juara 1 Hackathon Nasional</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-solid fa-trophy me-1"></i> 28 Okt 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">Tim mahasiswa TRPL berhasil menyabet gelar juara pertama dalam kompetisi pengembangan aplikasi Smart City.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Pemira Ketua Himpunan</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-regular fa-calendar me-1"></i> 25 Okt 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">Debat kandidat calon ketua himpunan periode baru berlangsung panas dan demokratis di Aula Polije.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border p-3 custom-card">
+                    <div class="d-flex flex-column h-100">
+                        <div class="d-flex mb-2">
+                            <div class="img-placeholder me-3"><i class="fa-regular fa-image fa-2x text-muted"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Tips Belajar Coding</h6>
+                                <small class="text-secondary" style="font-size: 0.75rem;">
+                                    <i class="fa-regular fa-newspaper me-1"></i> 20 Okt 2025
+                                </small>
+                            </div>
+                        </div>
+                        <p class="small text-muted card-text-limit mt-2">Artikel: Strategi efektif bagi pemula untuk memahami logika pemrograman tanpa merasa kewalahan.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/script-berita.js"></script>
+</body>
+</html>
