@@ -2,6 +2,7 @@
 Web Company Profile Workshop Desain Aplikasi - Himpunan Mahasiswa Teknik rekayasa Perangkat Lunak
 ## [V.4.12.20250630]
 ### Apa yang baru?
-- Mengganti page berita dengan format collum 3x3 menjadi 2x2 dan foto yang lebih besar.
+- Mengganti page Berita & Artikel dengan format collum 3x3 menjadi 2x2 dan foto yang lebih besar.
 - Memperbaiki managemen kode agar terlihat rapi
+- Menambahkan foto foto dokumentasi di Homepage dan Berita
 - Foto berformat WEBP
