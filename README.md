@@ -1,7 +1,7 @@
-# Company-Profile-HIMA-TRPL
+# UPDATE LOG Company-Profile-HIMA-TRPL
 Web Company Profile Workshop Desain Aplikasi - Himpunan Mahasiswa Teknik rekayasa Perangkat Lunak
 
-## [V.4.12.20252323]
+## [V.4.12.20252326]
 ### Apa yang baru?
 - Fix Sidebar menu di page Agenda Kegiatan
 - Menggantu keterangan lokasi awal di Kabupaten Jember menjadi Sabu Raijua, Nusa Tenggara Timur
