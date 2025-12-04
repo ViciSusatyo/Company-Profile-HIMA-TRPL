@@ -1,4 +1,4 @@
-# UPDATE LOG Company-Profile-HIMA-TRPL
+# UPDATE LOG COMPANY PROFILE HIMA TRPL
 Web Company Profile Workshop Desain Aplikasi - Himpunan Mahasiswa Teknik rekayasa Perangkat Lunak
 
 ## [V.4.12.20252326]
