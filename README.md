@@ -3,7 +3,7 @@ Web Company Profile Workshop Desain Aplikasi - Himpunan Mahasiswa Teknik rekayas
 
 ## [V.2025.12.72223]
 ### Apa yang baru?
-- Change Navbar from "Agenda Kegiatan" to "Agenda Acara Terdekat"
+- Change "Link Pendaftaran" directed link from Example Link to Questionnaire Link because of the lack of code literacy in Indonesia
 
 ## [V.2025.12.70759]
 ### Apa yang baru?
