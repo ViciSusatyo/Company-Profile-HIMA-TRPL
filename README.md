@@ -1,6 +1,10 @@
 # UPDATE LOG COMPANY PROFILE HIMA TRPL
 Web Company Profile Workshop Desain Aplikasi - Himpunan Mahasiswa Teknik rekayasa Perangkat Lunak
 
+## [V.2025.12.72223]
+### Apa yang baru?
+- Change Navbar from "Agenda Kegiatan" to "Agenda Acara Terdekat"
+
 ## [V.2025.12.70759]
 ### Apa yang baru?
 - Change Navbar from "Agenda Kegiatan" to "Agenda Acara Terdekat"
