@@ -3,7 +3,7 @@ Web Company Profile Workshop Desain Aplikasi - Himpunan Mahasiswa Teknik rekayas
 
 ## [V.2025.12.70759]
 ### Apa yang baru?
-- Fix Navbar from "Agenda Kegiatan" to "Agenda Acara Terdekat"
+- Change Navbar from "Agenda Kegiatan" to "Agenda Acara Terdekat"
 
 ## [V.2025.12.42326]
 ### Apa yang baru?
