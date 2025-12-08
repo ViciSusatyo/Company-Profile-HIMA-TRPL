@@ -12,14 +12,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    // Card Interaction
-    const cards = document.querySelectorAll('.custom-card');
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            const title = this.querySelector('h4').innerText;
-            const badge = this.querySelector('.badge').innerText;
-            alert(`Detail Prestasi:\n${title} (${badge})\n\nLihat sertifikat dan dokumentasi lengkap?`);
-        });
-    });
 });
