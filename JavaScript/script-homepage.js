@@ -8,8 +8,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         const targetElement = document.querySelector(targetId);
         if(targetElement) {
+            
+            let scrollToPosition;
+            const defaultOffset = 80; // Offset untuk navbar sticky
+
+            // Logika baru: Untuk #beranda, scroll ke 0
+            if (targetId === '#beranda') {
+                scrollToPosition = 0; // Posisi paling atas
+            } else {
+                // Untuk section lain, gunakan offset
+                scrollToPosition = targetElement.offsetTop - defaultOffset;
+            }
+
             window.scrollTo({
-                top: targetElement.offsetTop - 80,
+                top: scrollToPosition,
                 behavior: 'smooth'
             });
             
