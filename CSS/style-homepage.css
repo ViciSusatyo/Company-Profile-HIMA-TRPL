@@ -6,6 +6,17 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Pastikan #beranda tidak memiliki margin atau padding saat discroll */
+#beranda {
+    scroll-margin-top: 0 !important; /* Menghilangkan offset yang mungkin ditambahkan browser */
+}
+
+/* Pastikan section lain menggunakan offset jika diperlukan */
+/* Jika Anda ingin semua section di bawah navbar, tambahkan ini: */
+#tentang, #struktur, #pendaftaran, #agenda, #informasi, #kontak {
+    scroll-margin-top: 80px; 
+}
+
 /* Navbar Styling */
 .navbar {
     background-color: #fff;
