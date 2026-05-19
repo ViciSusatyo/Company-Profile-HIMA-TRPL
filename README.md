@@ -1,5 +1,6 @@
 # UPDATE LOG COMPANY PROFILE HIMA TRPL
 Web Company Profile Workshop Desain Aplikasi - Himpunan Mahasiswa Teknik rekayasa Perangkat Lunak
+Semester 1 2025
 
 ## [V.2025.12.090520]
 ### Apa yang baru?
